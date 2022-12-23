@@ -1,0 +1,71 @@
+https://habr.com/ru/company/ods/blog/462141/ - заливаем на гугл
+PLACES TO FETCH TEXTS: http://chinesereadingpractice.com/2020/06/16/childrens-story-two-rainbows/
+
+Book recommendations - https://www.youtube.com/watch?v=xySjbVUgAwU
+other rec https://www.youtube.com/watch?v=7rEagFH9tQg
+https://www.youtube.com/watch?v=ijtxuF_5kEU
+https://www.youtube.com/watch?v=1xtrIEwY_zY
+https://www.youtube.com/watch?v=rzxket9UtL4
+NLP text similarity https://www.youtube.com/watch?v=B-RTV-ftRzs
+
+BUGS:
+- logging exceptions from text update
+- if you try to update text only in eng - there is no mistake
+- delete redundate message from text reading process, or copy again text
+- add fuc to delete yourself
+- fix dictionary so you can add words as learning
+- при создание нового юзера - формируется новая таблица, где все тексты отмечены как нечитанные - птом статус меняется
+- check if user give only the number
+- get the exit from the process of getting nex texts
+- we got a question "i wanna upload more text" after reading texts from the lib
+- if there is no enough texts in good texts. bugs
+- aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+
+
+
+MWP
+- you can check words
+- you can give words status - learning - know
+- you can get texts that are made from your words
+
+TODO
+- logging word search
+
+
+LATER
+
+retrieve info from the database on persons vocab + how many times does he check those words - new words, rare words
+- Перенести в env по базе данных
+- upload_admin_text (either close it or manage somehow - only u can use it)
+- get the texts - based on HSK chosen
+- any command should be impossible if you are not registered
+- there is a data on how often you read those words
+- text you get is according to your lang level
+- add examples to words from the persons library
+- dictionary.py - refactor. you need to first check lang then translate. to improve reusability
+- check texts with empty list of words
+
+!!! you really really need to deal with words that are not translated somehow!!!!!!
+
+
+
+
+- [ ]  logging mistaken words
+
+
+Features to add - long term:
+
+1. Anki like - different repetition system
+2. Subjects - choose your preferred subjects for learning (pets, gardening etc.).
+3. created the list of source website for parsing
+4. let people to react on text - recommendation system
+5. determine the difficulty of texts
+
+
+FAR AWAY
+1. add hindi
+2. audio? video? (based on YouTube subtitle analysis (maybe youtube shorts))
+
+
+! app that search for similar stars to get inpired
+
